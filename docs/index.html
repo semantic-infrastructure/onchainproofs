@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>onchainproofs | The Verification Stack for On-Chain Claims</title>
+  <meta name="description" content="A reference framework for verifiable claims, evidence, and state transitions on-chain. Proof-first, audit-ready, machine-readable.">
+  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="canonical" href="https://onchainproofs.com/">
+
+  <style>
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:#0b0c10;
+      color:#e9eef7;
+      line-height:1.55;
+    }
+    main{
+      max-width:920px;
+      margin:0 auto;
+      padding:64px 24px;
+    }
+    h1{font-size:42px;margin-bottom:12px;}
+    h2{margin-top:56px;}
+    p{color:#b6c0d1;max-width:70ch;}
+    ul{margin-left:18px;color:#b6c0d1;}
+    hr{border:0;border-top:1px solid rgba(255,255,255,.12);margin:48px 0;}
+    footer{font-size:13px;color:#8c95a8;margin-top:48px;}
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "@id":"https://onchainproofs.com/#org",
+        "name":"onchainproofs",
+        "url":"https://onchainproofs.com/"
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://onchainproofs.com/#website",
+        "url":"https://onchainproofs.com/",
+        "name":"onchainproofs"
+      },
+      {
+        "@type":"WebPage",
+        "@id":"https://onchainproofs.com/#webpage",
+        "url":"https://onchainproofs.com/",
+        "name":"On-Chain Proofs – Verification Stack",
+        "isPartOf":{"@id":"https://onchainproofs.com/#website"}
+      },
+      {
+        "@type":"WebAPI",
+        "name":"On-Chain Proof Verification (Concept)",
+        "documentation":"https://github.com/semantic-infrastructure/onchainproofs",
+        "description":"Conceptual machine-readable interface for validating claims, evidence and state transitions on-chain."
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+<main>
+
+<h1>On-Chain Proofs</h1>
+<p>
+<strong>The verification stack for claims, evidence, and state transitions on-chain.</strong>
+</p>
+
+<hr>
+
+<h2>The problem</h2>
+<p>
+Blockchains can settle transactions, but they do not natively verify claims.
+Without structured proofs, systems rely on trust assumptions, unverifiable attestations, or narrative consensus.
+</p>
+
+<h2>Proof types</h2>
+<ul>
+  <li><strong>Data proofs</strong> – hashes, measurements, external data snapshots</li>
+  <li><strong>Event proofs</strong> – verifiable occurrences with timestamps</li>
+  <li><strong>State proofs</strong> – transitions derived from deterministic logic</li>
+  <li><strong>Attestation proofs</strong> – third-party validation with scope and limits</li>
+</ul>
+
+<h2>Verification flow</h2>
+<ul>
+  <li>Claim is declared</li>
+  <li>Evidence is submitted</li>
+  <li>Attestation (if required) is linked</li>
+  <li>State transition is executed or rejected</li>
+</ul>
+
+<h2>Threat model</h2>
+<ul>
+  <li>Oracle manipulation</li>
+  <li>Replay attacks</li>
+  <li>Double-claiming</li>
+  <li>Selective disclosure</li>
+</ul>
+
+<h2>Auditability</h2>
+<p>
+Every step produces a traceable event.
+Proofs are versioned, invalidatable, and auditable without relying on platform trust.
+</p>
+
+<h2>Scope & non-goals</h2>
+<ul>
+  <li>No asset issuance</li>
+  <li>No marketplaces</li>
+  <li>No investment or legal advice</li>
+</ul>
+
+<footer>
+Specification v0.1 · Reference framework · No warranties
+</footer>
+
+</main>
+</body>
+</html>
