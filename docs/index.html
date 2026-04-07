@@ -31,38 +31,42 @@
   </style>
 
   <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"Organization",
-        "@id":"https://onchainproofs.com/#org",
-        "name":"onchainproofs",
-        "url":"https://onchainproofs.com/"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://onchainproofs.com/#org",
+      "name": "onchainproofs",
+      "url": "https://onchainproofs.com/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://onchainproofs.com/#website",
+      "url": "https://onchainproofs.com/",
+      "name": "onchainproofs",
+      "publisher": {
+        "@id": "https://onchainproofs.com/#org"
       },
-      {
-        "@type":"WebSite",
-        "@id":"https://onchainproofs.com/#website",
-        "url":"https://onchainproofs.com/",
-        "name":"onchainproofs"
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://onchainproofs.com/docs/#webpage",
+      "url": "https://onchainproofs.com/docs/",
+      "name": "On-Chain Proofs – Verification Stack",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://onchainproofs.com/#website"
       },
-      {
-        "@type":"WebPage",
-        "@id":"https://onchainproofs.com/#webpage",
-        "url":"https://onchainproofs.com/",
-        "name":"On-Chain Proofs – Verification Stack",
-        "isPartOf":{"@id":"https://onchainproofs.com/#website"}
-      },
-      {
-        "@type":"WebAPI",
-        "name":"On-Chain Proof Verification (Concept)",
-        "documentation":"https://github.com/semantic-infrastructure/onchainproofs",
-        "description":"Conceptual machine-readable interface for validating claims, evidence and state transitions on-chain."
+      "publisher": {
+        "@id": "https://onchainproofs.com/#org"
       }
-    ]
-  }
-  </script>
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
