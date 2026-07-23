@@ -1,0 +1,23 @@
+# OnChainProofs.com
+
+Independent reference project on cryptographic proofs, verifiable records and on-chain verification structures.
+
+## Canonical Resource
+
+[Home](https://onchainproofs.com/)
+
+## Main Sections
+
+- [Sources](https://onchainproofs.com/sources/)
+
+## Purpose
+
+OnChainProofs.com provides an independent reference on cryptographic proof systems, verifiable records and machine-verifiable on-chain validation structures.
+
+## Administrative
+
+No separate administrative resources are published.
+
+## Repository
+
+[OnChainProofs Repository](https://github.com/semantic-infrastructure/onchainproofs)
